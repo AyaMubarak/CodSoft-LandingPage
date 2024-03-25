@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #fff;
+  overflow-x: hidden;
+  font-family: poppins;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0px 1.647px 8.237px 0px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #101928;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-size: larger;
+  font-weight: bold;
+  gap: 10px;
+  align-items: center;
+}
+
+.container {
+  margin: auto;
+}
+span {
+  color: blue;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.color {
+  color: blue;
+}
+
+.sign {
+  background-color: blue;
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.download a {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.part1 {
+  margin-top: 30px;
+}
+.part1-row {
+  display: flex;
+}
+.part1-right img {
+  width: 450px;
+}
+.part2 .center {
+  margin-top: 20px;
+  background-image: url("./images/services-right-dec.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.part2 h2,
+.part3-left h2,
+.part4 h2 {
+  text-align: center;
+}
+
+.line {
+  color: blue;
+  text-align: center;
+}
+.text,
+.details,
+.date,
+.major {
+  text-align: center;
+  color: rgb(180, 178, 178);
+}
+.cards {
+  margin-top: 50px;
+}
+.cards .row {
+  gap: 40px;
+}
+.card {
+  border: 2px solid rgb(79, 79, 79);
+  padding: 50px;
+  border-radius: 20px;
+  border-top-right-radius: 100px;
+  width: 100%;
+}
+.card:hover {
+  background-color: rgb(77, 110, 218);
+  color: #fff;
+}
+.star {
+  display: flex;
+  gap: 5px;
+}
+.star img {
+  width: 20px;
+}
+.part4 h4 {
+  text-align: center;
+}
+.grey {
+  color: rgb(79, 79, 79);
+  text-decoration: line-through;
+}
+.plans {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.plan {
+  padding: 50px;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.plan span {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.plan a {
+  border: 1px solid blue;
+  padding: 15px;
+  border-radius: 20px;
+}
+.plan a:hover {
+  background-color: rgb(77, 110, 218);
+  color: #fff;
+}
+footer {
+  background-image: url("./images/footer-bg.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+
+  color: #fff;
+  margin-top: 60px;
+}
+footer .column {
+  margin-top: 300px;
+}
+
+footer a {
+  color: #fff;
+}
+.copy {
+  text-align: center;
+}
+footer .row {
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.rows {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+@media screen and (max-width: 770px) {
+  header {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .container,
+  .part1,
+  .part2,
+  .part3,
+  .part4,
+  .part5 {
+    width: calc(100% - 16px);
+  }
+
+  .row {
+    padding: 16px 0px;
+  }
+
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .part1-row,
+  .part3 .row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .part1-right img,
+  .part3-right img {
+    width: calc(100% - 16px);
+    height: 70%;
+  }
+  .download {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .cards .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .plans {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .rows {
+    display: flex;
+    gap: 20px;
+  }
+
+  footer img {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 771px) and (max-width: 1300px) {
+  header {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .container,
+  .part1,
+  .part2,
+  .part3,
+  .part4,
+  .part5 {
+    width: calc(100% - 20px);
+  }
+
+  .row {
+    padding: 16px 60px 20px 60px;
+    align-self: flex-start;
+    gap: auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  header {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .container,
+  .part1,
+  .part2,
+  .part3,
+  .part4,
+  .part5 {
+    width: calc(100% - 30px);
+  }
+
+  .row {
+    padding: 20px 132px 24px 132px;
+  }
+
+  .logo img {
+    width: 54px;
+    height: 54px;
+  }
+}
